@@ -1,0 +1,5 @@
+Credentials cache: API:054FFCAB-7B2E-4369-ABB5-A643989C899B
+        Principal: ioriola@42MADRID.COM
+
+  Issued                Expires               Principal
+Feb  5 14:15:28 2020  Feb  6 00:15:23 2020  krbtgt/42MADRID.COM@42MADRID.COM

@@ -1,0 +1,2 @@
+cat /etc/passwd | grep -v "#" | awk 'NR % 2 == 0' | cut -d ":" -f 1 | rev | sort -r |awk 'NR>=ENVIRON["FT_LINE1"] && NR<=ENVIRON["FT_LINE2"]' | tr '\n' ',' | sed 's/,/, /g' | sed 's/\(.*\), /\1./' | tr -d '\n'
+#                 quitar #    líneas pares       corta de 1 a ':'   invert orden z-a    rango entre 2 lineas (variables del entorno de ejec.     Cambiar /n por , y añadir " "      cambiar último ", " por "." Y borrar último salto de linea
